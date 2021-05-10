@@ -10,3 +10,21 @@
 <a routerLink="/shipping">
   Shipping Prices
 </a>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <label>
+    name
+  </label>
+  <input formControlName = "name">
+
+  <div>
+    <label>
+    Address
+  </label>
+    <input formControlName = "address">
+  </div>
+
+  <button class ="button" type = "submit">
+  Purchase
+</button>
+</form>
